@@ -2,7 +2,7 @@
 
 Three-day course, delivered Monday 2 to Wednesday 4 November 2026. Draft written
 Tuesday 13 October 2026, after the survey in `research-2026-10.md`, and revised
-the same day with Feiko's answers. Status : design only, nothing built.
+the same day with Feiko's answers. Status : built 14 October ; see "Status" at the end.
 
 Advertised at `spiraltrain.nl/multi-agents-with-langgraph` : 9 modules, for AI
 engineers, developers and data scientists with Python and a grasp of LLMs and
@@ -415,5 +415,39 @@ Proposed, three weeks to Monday 2 November :
 - OpenRouter : Feiko creates the account, a trainer key and a capped participant key
 - Yair's crew post, diagram and goldmary.eu coding setup may be quoted on slides
 
-## Open questions
+## Status, 14 October
+
+Built, executed and pushed (Forgejo `SpiralTrain/Multi-Agents-LangGraph`, GitHub
+`FeikoWielsma/Multi-Agents-LangGraph`, public for the Colab download path) :
+
+- Slides 00 to 10, about 285 ; 67 demo notebooks, 0 errors ; lint clean ; both PDFs
+- Exercises 01 to 11 and capstone stages 1 to 5 : guides, skeletons, executed solutions
+- Per-module measurements in `measurements-NN.md`, exercises and capstone in
+  `measurements-exercises.md` and `measurements-capstone.md`. OpenRouter spend for the
+  whole build : $0.12 of the $10 trainer key
+
+Decisions taken during the build :
+
+- `deepagents[quickjs]` and `langchain-quickjs==0.3.9` added to the pins, so module 08
+  runs the QuickJS interpreter and agent-written subagent fan-out (`measurements.md`)
+- Module 08 demo08 b keeps its honest result : splitting 31 manuals that fit in one
+  prompt costs more tokens, not fewer ; the RLM gain needs an input beyond the window
+- On langgraph-api 0.16.0, A2A takes the assistant UUID, not the graph name ; slides,
+  exercise05 and capstone stage 3 teach that (`measurements-06.md`)
+- Capstone stage 5 keeps the evaluation lesson : tool coverage True while 2 of 5
+  answers are wrong on tool arguments (`CT400`) ; argument validation is optional
+- Exercise10 scores trajectories with `tool_args_match_mode="ignore"` ; exercise11
+  holds its async task about two minutes so the first check sees `running` ;
+  exercise02 is deterministic, no model calls
+- Exercise pills sit on the module summary slides ; capstone stages are named in the
+  speaker notes, since the linter allows only demo and exercise pills
+- Only notebooks are committed under `exercises/` and `solutions/` ; notebooks write
+  their own server files at run time
+
+Next :
+
+- Timing and skip marks per module against "The days"
+- Laptop prep checklist from "Settled on 13 October" ; freeze the stack about 27 October
+- Dry run on the classroom laptop about 29 October
+- Optional : the URL of Yair's post for the module 01 and 06 notes
 
