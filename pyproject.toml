@@ -1,0 +1,39 @@
+[project]
+name = "multi-agents-langgraph"
+version = "2026.10.0"
+description = "ARI520 Multi Agents with LangGraph : SpiralTrain course labs"
+requires-python = ">=3.11,<3.14"
+
+# Pinned from the probe of 13 October 2026, see build/measurements.md.
+# exclude-newer moves to the freeze date about a week before delivery ; re-run every notebook then.
+dependencies = [
+    "langchain[mcp]==1.4.5",
+    "langchain-core==1.6.10",
+    "langchain-openai==1.7.1",
+    "langgraph==1.2.15",
+    "langgraph-checkpoint-sqlite==3.1.2",
+    "deepagents[quickjs]==0.7.24",
+    "langchain-quickjs==0.3.9",
+    "langsmith==0.14.8",
+    "openai==3.29.0",
+    "python-dotenv==1.2.4",
+    "langchain-huggingface==1.2.3",
+    "sentence-transformers==6.1.0",
+    "langchain-text-splitters==1.1.3",
+    "rank-bm25==0.2.2",
+    "agentevals==0.0.9",
+    "httpx==0.28.1",
+    "pytest==9.1.1",
+    "pandas==3.0.6",
+    "jupyterlab==4.6.4",
+    "ipykernel==7.4.0",
+]
+
+[dependency-groups]
+server = [
+    "langgraph-cli[inmem]==0.4.33",
+]
+
+[tool.uv]
+package = false
+exclude-newer = "2026-10-14T00:00:00Z"

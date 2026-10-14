@@ -1,0 +1,10 @@
+{
+  "name": "courseware-multi-agents-langgraph-build",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bun run ../../Presentation-Template/build/build.ts",
+    "serve": "bun run ../../Presentation-Template/build/build.ts --serve",
+    "lint": "bun run ../../Presentation-Template/build/lint-slides.ts"
+  }
+}

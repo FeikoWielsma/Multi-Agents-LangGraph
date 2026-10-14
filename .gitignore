@@ -1,0 +1,87 @@
+# ---- secrets ---------------------------------------------------------------
+# Never commit real keys. .env.example holds the names with no values
+.env
+.env.*
+!.env.example
+keys.txt
+*.key
+*.pem
+
+# ---- python ----------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.ruff_cache/
+
+# ---- node / slide build ----------------------------------------------------
+node_modules/
+build/dist/
+build/spiraltrain-logo.png
+build/.mermaid-cache/
+
+# ---- generated at run time -------------------------------------------------
+chroma_db/
+.chroma/
+*.sqlite3
+checkpoints.db
+.langgraph_api/
+**/workspace/
+notebooks/*.db
+exercises/*.db
+solutions/*.db
+notebooks/*_server.py
+exercises/*_server.py
+solutions/*_server.py
+
+# ---- binaries --------------------------------------------------------------
+*.pdf
+!ARI520-Multi-Agents-LangGraph.pdf
+!ARI520-Multi-Agents-LangGraph-Exercises.pdf
+!data/**/*.pdf
+ARI520-*.html
+
+# ---- editor / OS -----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+Untitled*.ipynb
+*.tmp
+scratch/
+
+# files the notebooks write
+**/service.py
+**/test_agent.py
+
+notebooks/langgraph.json
+build/*.log
+
+# data files the Colab simulation downloads next to the notebooks
+exercises/*.json
+exercises/*.md
+exercises/*.csv
+exercises/capstone/
+solutions/*.json
+solutions/*.md
+solutions/*.csv
+solutions/capstone/
+notebooks/capstone/
+
+# slide renders for visual review
+build/render/
+
+# per-module notebook folders : run-time files
+notebooks/**/*.db
+notebooks/**/test_*.py
+notebooks/**/workspace/
+notebooks/**/langgraph.json
+
+# runner reports and notebook result files, regenerated on every run
+notebooks/**/run-*.json
+notebooks/**/*-results.json
+notebooks/**/.langgraph_api/

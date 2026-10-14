@@ -1,0 +1,28 @@
+# Replacing the auxiliary battery on the MM-09
+
+- Document : PROC-MM-BT-02
+- Model : MM-09
+- Type : procedure
+- Date : 2024-08-19
+
+## When
+
+Error F-MM-210, ramp stops on battery power. First action : replace the auxiliary battery.
+
+## Part
+
+- Part number MM-BT-02, auxiliary battery
+- Check stock in the parts system before travelling
+
+## Steps
+
+1. Book a workshop bay and isolate the bus under the depot procedure
+2. Follow the workshop isolation check before removing the component cover
+3. Disconnect and remove the old auxiliary battery
+4. Fit the new part and reconnect
+5. Run the self test ; the error must not return
+6. Record the part number and fleet_no on the work order
+
+## Time
+
+Allow 2 hours in the workshop.

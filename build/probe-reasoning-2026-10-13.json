@@ -1,0 +1,122 @@
+[
+  {
+    "model": "openai/gpt-6-luna",
+    "setting": "default",
+    "ok": true,
+    "s": 2.2,
+    "prompt": 70,
+    "completion": 26,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\":\"BR-220\",\"depot\":\"Noord\"}",
+    "provider": "OpenAI"
+  },
+  {
+    "model": "openai/gpt-6-luna",
+    "setting": "effort none",
+    "ok": true,
+    "s": 1.3,
+    "prompt": 70,
+    "completion": 26,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\":\"BR-220\",\"depot\":\"Noord\"}",
+    "provider": "OpenAI"
+  },
+  {
+    "model": "openai/gpt-6-luna",
+    "setting": "effort minimal",
+    "ok": true,
+    "s": 1.1,
+    "prompt": 70,
+    "completion": 26,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\":\"BR-220\",\"depot\":\"Noord\"}",
+    "provider": "OpenAI"
+  },
+  {
+    "model": "openai/gpt-6-luna",
+    "setting": "effort low",
+    "ok": true,
+    "s": 1.7,
+    "prompt": 70,
+    "completion": 26,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\":\"BR-220\",\"depot\":\"Noord\"}",
+    "provider": "OpenAI"
+  },
+  {
+    "model": "openai/gpt-6-luna",
+    "setting": "enabled false",
+    "ok": true,
+    "s": 1.6,
+    "prompt": 70,
+    "completion": 26,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\":\"BR-220\",\"depot\":\"Noord\"}",
+    "provider": "OpenAI"
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "setting": "default",
+    "ok": true,
+    "s": 5.9,
+    "prompt": 122,
+    "completion": 38,
+    "reasoning": 4,
+    "tool": true,
+    "args": "{\"part\": \"BR-220\", \"depot\": \"Noord\"}",
+    "provider": "DeepInfra"
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "setting": "effort none",
+    "ok": true,
+    "s": 1.6,
+    "prompt": 124,
+    "completion": 32,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\": \"BR-220\", \"depot\": \"Noord\"}",
+    "provider": "DeepInfra"
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "setting": "effort minimal",
+    "ok": true,
+    "s": 1.9,
+    "prompt": 122,
+    "completion": 50,
+    "reasoning": 16,
+    "tool": true,
+    "args": "{\"part\": \"BR-220\", \"depot\": \"Noord\"}",
+    "provider": "DeepInfra"
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "setting": "effort low",
+    "ok": true,
+    "s": 2.2,
+    "prompt": 122,
+    "completion": 50,
+    "reasoning": 16,
+    "tool": true,
+    "args": "{\"part\": \"BR-220\", \"depot\": \"Noord\"}",
+    "provider": "DeepInfra"
+  },
+  {
+    "model": "xiaomi/mimo-v2.6-pro",
+    "setting": "enabled false",
+    "ok": true,
+    "s": 1.0,
+    "prompt": 124,
+    "completion": 32,
+    "reasoning": 0,
+    "tool": true,
+    "args": "{\"part\": \"BR-220\", \"depot\": \"Noord\"}",
+    "provider": "DeepInfra"
+  }
+]

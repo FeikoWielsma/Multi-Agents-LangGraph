@@ -1,0 +1,21 @@
+* text=auto eol=lf
+*.md    text eol=lf
+*.py    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.jsonl text eol=lf
+*.toml  text eol=lf
+*.yml   text eol=lf
+*.csv   text eol=lf
+*.svg   text eol=lf
+*.ipynb text eol=lf
+*.ps1   text eol=crlf
+
+# Binary course assets : never diff or eol-convert
+*.pdf    binary
+*.png    binary
+*.jpg    binary
+*.gif    binary
+*.db     binary
+*.zip    binary
+uv.lock  text eol=lf

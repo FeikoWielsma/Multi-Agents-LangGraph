@@ -1,0 +1,78 @@
+name: Build and Release PDFs
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: docker-build
+    container:
+      image: git.feikowielsma.nl/feiko/courseware-ci-image:latest
+    steps:
+      - name: Checkout
+        uses: https://github.com/actions/checkout@v4
+
+      - name: Checkout Presentation Template
+        run: |
+          git clone --depth=1 "${GITHUB_SERVER_URL}/SpiralTrain/Presentation-Template.git" \
+            "$(dirname $(pwd))/Presentation-Template"
+
+      - name: Install template dependencies
+        run: bun install --cwd ../Presentation-Template/build --frozen-lockfile
+
+      - name: Build slides PDF
+        shell: bash
+        env:
+          CHROME_PATH: /usr/bin/google-chrome-stable
+          MARP_EXTRA_ARGS: --chrome-arg=--no-sandbox --chrome-arg=--disable-dev-shm-usage
+        run: |
+          cd build
+          bun run build -- --force
+          bun run build -- --exercises --force
+
+      - name: Package student zip
+        shell: bash
+        run: |
+          zip -r "build/dist/ARI520-Multi-Agents-LangGraph-student.zip" \
+            *.pdf notebooks exercises solutions data \
+            README.md pyproject.toml uv.lock .env.example \
+            -x "*.git*" ".forgejo/*" "build/*" "src/*" || true
+
+      - name: Publish latest release
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SHORT_SHA=$(echo "${GITHUB_SHA}" | head -c7)
+          API="${GITHUB_SERVER_URL}/api/v1/repos/${GITHUB_REPOSITORY}"
+
+          EXISTING=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" "${API}/releases/tags/latest")
+          EXISTING_ID=$(echo "${EXISTING}" | bun -e "const fs = require('fs'); try { const d = JSON.parse(fs.readFileSync(0, 'utf-8')); console.log(d.id || ''); } catch (e) { console.log(''); }" 2>/dev/null)
+          if [ -n "${EXISTING_ID}" ]; then
+            curl -sf -X DELETE -H "Authorization: token ${GITHUB_TOKEN}" "${API}/releases/${EXISTING_ID}"
+          fi
+          curl -sf -X DELETE -H "Authorization: token ${GITHUB_TOKEN}" "${API}/git/refs/tags/latest" || true
+
+          RELEASE=$(curl -sf -X POST \
+            -H "Authorization: token ${GITHUB_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "{\"tag_name\":\"latest\",\"name\":\"Latest build\",\"body\":\"PDF built from commit \`${SHORT_SHA}\`\",\"prerelease\":true}" \
+            "${API}/releases")
+
+          RELEASE_ID=$(echo "${RELEASE}" | bun -e "const fs = require('fs'); console.log(JSON.parse(fs.readFileSync(0, 'utf-8')).id);")
+
+          find . -maxdepth 1 -name "*.pdf" | while read -r asset; do
+            curl -sf -X POST -H "Authorization: token ${GITHUB_TOKEN}" \
+              -F "attachment=@${asset}" "${API}/releases/${RELEASE_ID}/assets"
+          done
+
+          find build/dist -maxdepth 1 -name "*.zip" | while read -r asset; do
+            curl -sf -X POST -H "Authorization: token ${GITHUB_TOKEN}" \
+              -F "attachment=@${asset}" "${API}/releases/${RELEASE_ID}/assets"
+          done

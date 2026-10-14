@@ -1,0 +1,44 @@
+ticket_id,opened,depot_id,fleet_no,model,error_code,symptom,resolution,parts_used,mechanic,hours
+BT-1001,2026-05-10,D01,CE12-2021-0117,CE-12,F-CE-410,Inverter communication dropout reported by drivers,"Replaced CE-IM-04, self test passed",CE-IM-04,Ivo Rietman,2.5
+BT-1002,2026-06-22,D01,CE12-2021-0117,CE-12,F-CE-220,Traction battery insulation fault reported by drivers,"Replaced CE-TB-01, self test passed",CE-TB-01,Milan Velders,2
+BT-1003,2026-04-09,D01,CE12-2021-0117,CE-12,F-CE-110,Traction system over-temperature reported by drivers,"Replaced CE-CF-02, self test passed",CE-CF-02,Ivo Rietman,2
+BT-1004,2026-01-10,D01,CE12-2021-0117,CE-12,F-CE-305,Door actuator communication loss reported by drivers,"Error cleared, returned within a day, escalated to second line",,Ivo Rietman,2
+BT-1005,2026-01-14,D01,CE12-2021-0117,CE-12,F-CE-305,Door actuator communication loss reported by drivers,"Error cleared, returned within a day, escalated to second line",,Ivo Rietman,1.5
+BT-1006,2026-06-15,D01,CE12-2021-0117,CE-12,F-CE-410,Inverter communication dropout reported by drivers,"Replaced CE-IM-04, self test passed",CE-IM-04,Milan Velders,1.5
+BT-1007,2026-03-08,D03,CE12-2023-0342,CE-12,F-CE-220,Traction battery insulation fault reported by drivers,"Replaced CE-TB-01, self test passed",CE-TB-01,Ivo Rietman,4
+BT-1008,2026-06-13,D03,CE12-2023-0342,CE-12,F-CE-110,Traction system over-temperature reported by drivers,"Replaced CE-CF-02, self test passed",CE-CF-02,Ivo Rietman,2.5
+BT-1009,2026-07-11,D03,CE12-2023-0342,CE-12,F-CE-110,Traction system over-temperature reported by drivers,"Replaced CE-CF-02, self test passed",CE-CF-02,Milan Velders,2.5
+BT-1010,2026-08-05,D01,CD12-2020-0045,CD-12,F-CD-101,Engine intake pressure low reported by drivers,"Error cleared, returned within a day, escalated to second line",,Nora Dalen,1.5
+BT-1011,2026-06-01,D01,CD12-2020-0045,CD-12,F-CD-101,Engine intake pressure low reported by drivers,"Replaced CD-AF-01, self test passed",CD-AF-01,Ivo Rietman,4
+BT-1012,2026-01-02,D01,CD12-2020-0045,CD-12,F-CD-330,Engine control fault reported by drivers,"Replaced CD-EC-03, self test passed",CD-EC-03,Nora Dalen,2
+BT-1013,2026-08-25,D01,CD12-2020-0045,CD-12,F-CD-101,Engine intake pressure low reported by drivers,"Error cleared, returned within a day, escalated to second line",,Nora Dalen,2.5
+BT-1014,2026-06-03,D01,CD12-2020-0045,CD-12,F-CD-101,Engine intake pressure low reported by drivers,"Replaced CD-AF-01, self test passed",CD-AF-01,Ivo Rietman,4
+BT-1015,2026-03-26,D01,CD12-2020-0045,CD-12,F-CD-202,Fuel pump pressure low reported by drivers,"Replaced CD-FP-02, self test passed",CD-FP-02,Ivo Rietman,1.5
+BT-1016,2026-01-15,D04,CD12-2024-0098,CD-12,F-CD-202,Fuel pump pressure low reported by drivers,"Replaced CD-FP-02, self test passed",CD-FP-02,Ivo Rietman,2.5
+BT-1017,2026-04-21,D04,CD12-2024-0098,CD-12,F-CD-202,Fuel pump pressure low reported by drivers,"Replaced CD-FP-02, self test passed",CD-FP-02,Ivo Rietman,2
+BT-1018,2026-07-03,D04,CD12-2024-0098,CD-12,F-CD-330,Engine control fault reported by drivers,"Error cleared, returned within a day, escalated to second line",,Ivo Rietman,1.5
+BT-1019,2026-02-03,D04,CD12-2024-0098,CD-12,F-CD-202,Fuel pump pressure low reported by drivers,"Replaced CD-FP-02, self test passed",CD-FP-02,Nora Dalen,4
+BT-1020,2026-02-04,D02,RR14-2022-0210,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Nora Dalen,4
+BT-1021,2026-02-22,D02,RR14-2022-0210,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Milan Velders,6
+BT-1022,2026-01-15,D02,RR14-2022-0210,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Milan Velders,1.5
+BT-1023,2026-07-01,D05,RR14-2019-0033,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Sara Duin,2
+BT-1024,2026-07-23,D05,RR14-2019-0033,RR-14,F-RR-240,Step light failure reported by drivers,"Replaced RR-SL-02, self test passed",RR-SL-02,Milan Velders,2
+BT-1025,2026-07-22,D05,RR14-2019-0033,RR-14,F-RR-350,Door position out of range reported by drivers,"Replaced RR-DC-01, self test passed",RR-DC-01,Sara Duin,2.5
+BT-1026,2026-02-20,D05,RR14-2019-0033,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Nora Dalen,4
+BT-1027,2026-01-13,D05,RR14-2019-0033,RR-14,F-RR-240,Step light failure reported by drivers,"Replaced RR-SL-02, self test passed",RR-SL-02,Sara Duin,6
+BT-1028,2026-08-17,D03,RR14-2024-0401,RR-14,F-RR-240,Step light failure reported by drivers,"Replaced RR-SL-02, self test passed",RR-SL-02,Nora Dalen,2.5
+BT-1029,2026-07-01,D03,RR14-2024-0401,RR-14,F-RR-350,Door position out of range reported by drivers,"Replaced RR-DC-01, self test passed",RR-DC-01,Milan Velders,2.5
+BT-1030,2026-01-12,D03,RR14-2024-0401,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Sara Duin,6
+BT-1031,2026-08-24,D03,RR14-2024-0401,RR-14,F-RR-240,Step light failure reported by drivers,"Replaced RR-SL-02, self test passed",RR-SL-02,Nora Dalen,2
+BT-1032,2026-08-23,D03,RR14-2024-0401,RR-14,F-RR-120,Door controller not responding reported by drivers,"Replaced RR-BP-03, self test passed",RR-BP-03,Milan Velders,4
+BT-1033,2026-06-10,D03,RR14-2024-0401,RR-14,F-RR-240,Step light failure reported by drivers,"Replaced RR-SL-02, self test passed",RR-SL-02,Milan Velders,2
+BT-1034,2026-03-28,D02,MM09-2024-1188,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Replaced MM-BT-02, self test passed",MM-BT-02,Nora Dalen,1.5
+BT-1035,2026-05-19,D02,MM09-2024-1188,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Replaced MM-BT-02, self test passed",MM-BT-02,Sara Duin,2.5
+BT-1036,2026-08-14,D02,MM09-2024-1188,MM-09,F-MM-320,Passenger cabin temperature warning reported by drivers,"Replaced MM-FF-03, self test passed",MM-FF-03,Nora Dalen,4
+BT-1037,2026-02-14,D02,MM09-2024-1188,MM-09,F-MM-320,Passenger cabin temperature warning reported by drivers,"Replaced MM-FF-03, self test passed",MM-FF-03,Nora Dalen,1.5
+BT-1038,2026-01-27,D04,MM09-2025-2311,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Replaced MM-BT-02, self test passed",MM-BT-02,Sara Duin,2.5
+BT-1039,2026-05-27,D04,MM09-2025-2311,MM-09,F-MM-100,Ramp motor stall reported by drivers,"Replaced MM-RM-01, self test passed",MM-RM-01,Nora Dalen,2.5
+BT-1040,2026-04-28,D04,MM09-2025-2311,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Error cleared, returned within a day, escalated to second line",,Sara Duin,1.5
+BT-1041,2026-08-18,D05,MM09-2025-2350,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Replaced MM-BT-02, self test passed",MM-BT-02,Nora Dalen,2
+BT-1042,2026-06-15,D05,MM09-2025-2350,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Replaced MM-BT-02, self test passed",MM-BT-02,Sara Duin,2
+BT-1043,2026-02-16,D05,MM09-2025-2350,MM-09,F-MM-210,Ramp stops on battery power reported by drivers,"Error cleared, returned within a day, escalated to second line",,Sara Duin,4
