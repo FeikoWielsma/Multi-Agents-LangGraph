@@ -1,7 +1,7 @@
 # Course map : modules, demos, exercises
 
-Revised 13 October 2026, second pass : a demo for almost every other slide, but
-grouped. One notebook covers two to four related slides, one section per slide,
+Revised 13 October 2026, second pass ; built as listed on 14 October. A demo for
+almost every other slide, but grouped. One notebook covers two to four related slides, one section per slide,
 so the trainer switches notebooks less often.
 
 ## Conventions
@@ -18,8 +18,12 @@ so the trainer switches notebooks less often.
 - Demos run on the Veenhaven Bus data ; exercises and the capstone on Aurelia
 - Exercises keep one sequence across the course
 
-Counts : 68 notebooks with about 145 sections, 57 of the notebooks `llm` ; 11
-exercises ; 5 capstone stages ; about 290 slides.
+Counts as built : 67 demo notebooks (module 10 demo05 is a live trainer demo with
+no notebook) ; 11 exercises ; 5 capstone stages ; about 285 slides. Exercise
+notebooks are `exercises/exerciseNN-slug.ipynb`, guides `src/exercises/NN-slug.md`,
+capstone `exercises/capstone-stageN.ipynb` and `src/exercises/99-capstone.md`.
+Exercise pills sit on the module's summary slide ; capstone stages are named in
+its speaker notes.
 
 ## 01 Introduction to LangGraph : 4 notebooks
 

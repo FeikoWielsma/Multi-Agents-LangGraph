@@ -46,7 +46,7 @@ Three ideas carry the course from the first hour to the capstone :
 | Participant | Same as ARI510, background unknown. Build for a developer, refresher in module 04, pivots as ARI510 |
 | Outline | Module names kept, content current, Deep Agents added as module 08 |
 | Deck | New Marp deck. Ported from ARI510 modules 04, 08, 10, 11 and 12 where the material exists |
-| Volume | More than three days need, with skip marks in the speaker notes, as ARI510. About 290 slides and 68 demo notebooks with about 145 sections, one section for almost every other slide. Numbered per module : `notebooks/NN-module/demoNN-slug.ipynb` ; later sections pill as `demoNNb` |
+| Volume | More than three days need, with skip marks in the speaker notes, as ARI510. About 290 slides and 68 demo notebooks with about 145 sections, one section for almost every other slide ; built : about 285 slides, 67 notebooks. Numbered per module : `notebooks/NN-module/demoNN-slug.ipynb` ; later sections pill as `demoNNb` |
 | Deep Agents | A full day, day 3 : the harness, then deploying and applying it |
 | Managed Deep Agents | One slide, and a trainer demo only if the account allows. US cloud, beta, closed SDK |
 | A2A | Two local Agent Servers talking over A2A, as a lab |

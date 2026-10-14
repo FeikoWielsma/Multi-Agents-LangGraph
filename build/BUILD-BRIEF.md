@@ -1,7 +1,8 @@
 # Build brief for module agents : ARI520 Multi Agents with LangGraph
 
-Every agent building a module reads this first, then the module brief it was
-given. Repository : `C:\Git\courseWare\Multi-Agents-LangGraph`.
+Every agent building or changing a module reads this first, then the task it was
+given. All modules were built on 14 October ; a change now regenerates only the
+affected notebooks, reruns them, and keeps pills, measurements and lint in step. Repository : `C:\Git\courseWare\Multi-Agents-LangGraph`.
 
 ## Read before writing
 
@@ -44,7 +45,8 @@ your report.
 - Pills : the slide a notebook section serves ends with `> \`demo04 · handoffs\`` for
   the first section and `> \`demo04b · handoffs-fixed\`` for later ones. Numbered
   pills ascend through the file ; each numbered pill appears once
-- A `Summary : Module Name` slide closes the module
+- A `Summary : Module Name` slide closes the module. Its exercise pills and the
+  capstone note in its speaker notes belong to the lead
 
 ## Notebooks
 
@@ -68,7 +70,8 @@ your report.
   Never use `data/capstone/` in a demo ; that is the exercises' world
 - The course model is `llm`, `openai/gpt-6-luna` through OpenRouter with reasoning
   off. Use `make_llm(...)` for variants. Do not add other providers
-- Stack : `langchain` 1.4.5, `langgraph` 1.2.15, `deepagents` 0.7.24. Check an API
+- Stack : `langchain` 1.4.5, `langgraph` 1.2.15, `deepagents` 0.7.24 with
+  `langchain-quickjs` 0.3.9 for the interpreter, `langgraph-api` 0.16.0. Check an API
   against the installed package (`uv run python -c "import inspect, ..."`) before
   you teach it. The docs move faster than the pin
 - Handoffs between agent subgraphs : the documented example drops sibling tool

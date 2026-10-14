@@ -41,7 +41,7 @@ jobs:
         run: |
           zip -r "build/dist/ARI520-Multi-Agents-LangGraph-student.zip" \
             *.pdf notebooks exercises solutions data \
-            README.md pyproject.toml uv.lock .env.example \
+            README.md check_setup.py pyproject.toml uv.lock .python-version .env.example \
             -x "*.git*" ".forgejo/*" "build/*" "src/*" || true
 
       - name: Publish latest release

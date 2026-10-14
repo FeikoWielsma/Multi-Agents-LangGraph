@@ -87,13 +87,14 @@ The handoff code on `docs.langchain.com/oss/python/langchain/multi-agent/handoff
    half an answer, 3 of 3 runs at effort `none`, `low` and `medium`. Fix :
    forward `runtime.state["messages"]` in the `Command` update
 
-Both fixes are in `build/probe_patterns.py`. Teach the failure first, in demo10.
+Both fixes are in `build/probe_patterns.py`. Taught in module 05 demo04 : the documented version and both faults first, then the fixes.
 
 ## Cost so far
 
 | date | what | spent on the key |
 | --- | --- | --- |
 | 13 October | reasoning probe, `check_setup.py` twice, handoff debugging, two full pattern probes | $0.0225 |
+| 14 October | all 67 demo notebooks, 11 exercise and 5 capstone solutions, with reruns | $0.12 cumulative |
 
 ## Stack change, 14 October 2026
 

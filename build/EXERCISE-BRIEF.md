@@ -36,8 +36,10 @@ notebooks, rate budgets, measurements, never a key in a file, never the PDF buil
 - The solution notebook is executed against the course model and saved with outputs,
   0 errors. The skeleton is saved without outputs. Check with
   `uv run python build/run_notebook.py solutions/exerciseNN-slug.ipynb`
-- Builder : `build/make_exercises_NN_MM.py` for your range, or `build/make_capstone.py`.
-  Do not edit the module builders `build/make_moduleNN.py`
+- Builders : `build/make_exercises_01_04.py`, `_05_07.py`, `_08_11.py` and
+  `build/make_capstone.py`. Do not edit the module builders `build/make_moduleNN.py`
+- Only `.ipynb` files are committed under `exercises/` and `solutions/`. A notebook
+  writes every other file it needs (graph modules, `langgraph.json`) at run time
 - Record each solution run (calls, tokens, seconds, results) in
   `build/measurements-exercises.md` under a heading per exercise, or
   `build/measurements-capstone.md`. Several agents append to the exercises file : add
