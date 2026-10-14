@@ -509,6 +509,10 @@ Academy Deep Agents notes 5.5, rewritten in our words. Port spirit of ARI510 dem
 - Token measurements guide handoffs and prompt caching
 - Error messages cross a trust boundary
 
+> `exercise10 · Evaluating a System of Agents`
+> `exercise11 · An Async Subagent on a Server`
+
 <!-- NOTES:
+Close with exercise10 and capstone stage 5 : served, an async diagnosis, scored per agent and end to end, cost per ticket. Exercise11 is optional when time is short.
 Source : Module 09 demos 01-08 and measurements-09.md ; https://docs.langchain.com/langsmith/agent-server ; build/research-2026-10.md sections 3 and 4. Each summary point is supported by its topic slide and executed demo or cited architecture documentation.
 -->

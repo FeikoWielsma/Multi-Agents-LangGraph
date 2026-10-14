@@ -403,3 +403,5 @@ Source : LangGraph documentation, Graph API and Functional API, https://docs.lan
 - Deferred nodes wait for scheduled work to finish
 - Compilation prepares a runnable graph that can be visualised
 - Graph API and Functional API share the LangGraph runtime
+
+> `exercise01 · Graphs and Loops`

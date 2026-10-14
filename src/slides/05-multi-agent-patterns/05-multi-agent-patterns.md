@@ -738,6 +738,9 @@ New. demo09 runs the single agent, subagents, fixed handoffs, skills, router, cu
 - Code handles known orchestration rules and deterministic checks
 - Calls, tokens, seconds and answer quality determine the trade-off
 
+> `exercise04 · A Multi-Agent Visit Planner`
+
 <!-- NOTES:
+Close with exercise04 and capstone stage 2 : specialists behind a supervisor, calls and tokens against stage 1.
 Close with exercise04 A Multi-Agent Visit Planner and capstone stage 2, owned by the lead. Forward pointers only : module 06 for message passing, conflict resolution and A2A ; module 08 for Deep Agents. Ask the participant which measured limitation of their single agent would justify adding a specialist.
 -->

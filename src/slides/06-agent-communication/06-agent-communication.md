@@ -526,6 +526,9 @@ Source : demo07-buyer-and-seller.ipynb b, tool schemas and denial ; langchain/to
 - Synchronization joins branches with fan-in and deferred nodes
 - Least privilege gives each agent its own credentials and tools
 
+> `exercise05 · Two Agents over A2A`
+> `exercise06 · Buyer and Seller`
+
 <!-- NOTES:
 Source : demo01 through demo07 in notebooks/06-agent-communication/ ; build/measurements-06.md ; installed langgraph 1.2.15, langgraph-api 0.16.0, langchain 1.4.5 and deepagents 0.7.24 implementations cited on the preceding slides.
 -->

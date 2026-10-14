@@ -636,6 +636,8 @@ Skippable. Source : installed Pregel.stream_events and langgraph.stream.run_stre
 - Stream modes expose node updates and accumulated state
 - DeltaChannel is beta and v3 event streaming experimental on the pinned stack
 
+> `exercise02 · State for Two Agents`
+
 <!-- NOTES:
 Close with exercise02 State for Two Agents and capstone stage 1, owned by the lead. The participant designs which keys the agents share, fixes a reducer conflict and chooses what belongs in a thread versus a Store.
 -->

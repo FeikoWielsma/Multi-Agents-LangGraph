@@ -764,6 +764,10 @@ Structure notes are in build/academy-deepagents-notes.md, read 13 October 2026. 
 - Isolated subagents see the task ; fork mode also sees the parent messages
 - A long input can be split in code ; `interrupt_on` and summarisation bound a long run
 
+> `exercise08 · A Deep Agent`
+> `exercise09 · Offload and Measure`
+
 <!-- NOTES:
+Close with exercise08 and capstone stage 4 : the desk as a Deep Agent, compared with stage 3. Exercise09 is optional.
 Close by pointing at capstone stage 4 : the same desk as a Deep Agent, compared with stage 3. Exercises exercise08 and exercise09 are the lead's, optional in the course map. If a number on an earlier slide disagrees with the notebook, trust the notebook and build/measurements-08.md.
 -->

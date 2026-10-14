@@ -85,3 +85,11 @@ notebooks/**/langgraph.json
 notebooks/**/run-*.json
 notebooks/**/*-results.json
 notebooks/**/.langgraph_api/
+
+# files and folders the exercise and capstone notebooks write while they run
+exercises/*.py
+solutions/*.py
+exercises/*.log
+solutions/*.log
+exercises/*/
+solutions/*/

@@ -453,5 +453,6 @@ Checked against LangGraph 1.2.15 : RunControl is in langgraph.runtime, passed as
 > `exercise07 · Approval in a Subagent`
 
 <!-- NOTES:
+Close with exercise07 and capstone stage 3 : parallel diagnosis with a judge, the manuals agent over A2A, approval inside a subagent. Trainer cut : the A2A part of stage 3 when Tuesday runs long.
 Close with exercise07 : participants build an approval inside a subagent tool, the case from demo02 b. The usual trap is the idempotency point from Resuming with Command. Source : the exercise and its solution notebook in this course.
 -->
